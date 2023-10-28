@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#body{
+   /*  overflow-y: hidden;  */ /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.container{
+    height: 100%; 
+    width: 100%;
+    overflow-x: none;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    
+
+}
+
+a{
+    text-decoration: none; 
+    /* to remove under line from ancor tag */
+    color: white;
+}
+
+
+.navbarcontainer{
+    width: 100vw;
+    min-height: 75px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+}
+
+#naviglist{
+    width: 100%;
+    padding: 15px;
+    /* margin-left: 10px ;
+    margin-right: 10px; */
+    list-style: none;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+#navlogo{
+    font-size: 2.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+#navitems{
+    display: flex;
+    gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.footerbox{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);    
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+}
+ .footerbox p{
+    color: white;
+    font-size: 2rem;
+ }
+ .contentbox{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+ }
+ .item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3S LINEAR 0S;
+ }
+ .rightbox img{
+    height: 200px;
+    width: 3 00px;
+    border-radius: 20px;
+    transition: all 0.3s linear 0s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ .rightbox:hover{
+    transform: scale(1.1);
+
+ }
+
+  
+ .leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+ .leftbox h2{
+    font-size: 2rem;
+ }
+
+ .recipiebox{
+    font-size: 1.1rem;
+
+ }
+
+
+.INGREDIENTSbox{
+    font-size: 1.1rem;
+
+}
+
+
+.rightbox .overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(36,34,34,0.713);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0; 
+    /* to make it invisible before hovering */
+    transition: all 0.3s linear 0s;
+}
+.rightbox:hover .overlay{
+opacity: 1;
+}
+.rightbox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+
+}
